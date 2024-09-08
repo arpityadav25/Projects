@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:  'poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.container-box{
+  background: linear-gradient(rgb(151, 213, 224), rgb(22, 30, 102));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+
+.note-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 700px;
+  background: white;
+  border-radius: 25px;
+  background-image: url(images/base-note-app.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.note-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 15em;
+  margin-bottom: 19em;
+  padding-top: 6em;
+  padding-left: 1em;
+}
+
+#input-box {
+  color: rgb(122, 112, 136);
+  width: 21em;
+  margin-left: 40px;
+  height: 3rem;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  border-radius: 20px;
+  background: rgb(181, 188, 204);
+  padding: 20px;
+}
+
+button {
+  margin-right: 70px;
+  width: 60px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: rgb(167, 184, 216);
+  color: rgb(119, 92, 126);
+  font-weight: bold;
+}
+
+ul{
+  padding: 2.5rem ;
+  grid-column: 1/span 3;
+  list-style: none;
+  font-size: large;
+  color: rgb(222, 216, 230);
+  height: 550px;
+  overflow: auto;
+}
+
+.small-box {
+  flex-shrink: 0;  /* Prevent the box from shrinking */
+  width: 20px;
+  height: 20px;
+  outline: none;
+  background-color: lightgray;
+  margin-right: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+.small-box.checked {
+  background-color: rgb(117, 120, 160); /* Change the background color when checked */
+  position: relative;
+}
+.small-box.checked::after {
+  content: '✔'; /* Add checkmark inside the box */
+  color: rgb(216, 211, 224);
+  font-size: 16px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgba(127, 150, 185, 0.9);
+  border-radius: 10px;
+  margin-bottom: 2em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+ul::-webkit-scrollbar-track {
+  background: rgba(192, 183, 199, 0.5);
+  border-radius: 15px;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: rgb(174, 141, 206, 0.8);
+  border-radius: 15px;
+}
