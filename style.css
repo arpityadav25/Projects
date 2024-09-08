@@ -73,7 +73,7 @@ ul{
 }
 
 .small-box {
-  flex-shrink: 0;  /* Prevent the box from shrinking */
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
   outline: none;
@@ -83,11 +83,11 @@ ul{
   margin-left: 10px;
 }
 .small-box.checked {
-  background-color: rgb(117, 120, 160); /* Change the background color when checked */
+  background-color: rgb(117, 120, 160);
   position: relative;
 }
 .small-box.checked::after {
-  content: '✔'; /* Add checkmark inside the box */
+  content: '✔'; 
   color: rgb(216, 211, 224);
   font-size: 16px;
   position: absolute;
